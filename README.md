@@ -1,5 +1,5 @@
 # [PRANAY] // BHACKSH 🐺
-
+![Logo](logo.png)
 <div align="center">
 
 ![Lone Wolf](PRANAY_FINAL_WOLF.png)
