@@ -1,19 +1,11 @@
-![AI Agent Auditor Banner](banner.png)
+# [PRANAY] // BHACKSH
+## SOLO HACKER • EST 2026 • BHANDARA
 
-# AI AGENT AUDITOR // ADVANCED v2.1 - PRANAY
-### Exploit • Detect • Secure.
+![Lone Wolf](PRANAY_FINAL_WOLF.png)
 
-> **Author:** Pranay Meshram | Bhandara
-> **Mode:** Red Team | AI Security Auditing Tool
+> Lone Wolf of Bhandara - Howls in Code, Hunts in Dark
 
-#### What it does?
-- Detects prompt-injection attempts [CRITICAL]
-- Runs 14/14 exploit tests
-- Locks & secures AI Agents
-
-#### For Hacking Jobs:
-`SOC Analyst | Red Team | Pentesting | AI Security`
-
-**GitHub:** github.com/Pranay7030/AI-Agent-Auditor
-
----
+**Operator:** PRANAY
+**Tag:** SOLO HACKER - One Man Army
+**Flag:** CYBERX{intel_Pranay_master}
+**Vibe:** No Team. Just Code. Just Hunt.
