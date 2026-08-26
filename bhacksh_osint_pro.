@@ -1,0 +1,60 @@
+from PIL import Image
+from PIL.ExifTags import TAGS
+import os, datetime
+
+print("="*50)
+print("[ BHACKSH OSINT PRO - Bhandara Cyber Squad ]")
+print("="*50)
+
+path = input("\nImage path daal: ").strip()
+if not os.path.exists(path):
+    print("File nahi mili!")
+    exit()
+
+img = Image.open(path)
+print(f"\n[SCAN] File: {path}")
+print(f"[INFO] {img.format} | {img.size} | {img.mode}")
+
+flag_found = ""
+print("\n[1] EXIF SCAN...")
+try:
+    for k,v in img.getexif().items():
+        print(f" -> {TAGS.get(k,k)}: {v}")
+except:
+    print(" No EXIF")
+
+print("\n[2] HIDDEN FLAG SCAN...")
+with open(path,'rb') as f:
+    data = f.read().decode('utf-8', errors='ignore')
+    if "CYBERX" in data:
+        s = data.find("CYBERX")
+        flag_found = data[s:s+60].split()[0]
+        print(f" FLAG FOUND: {flag_found}")
+    else:
+        print(" No flag in binary")
+
+print("\n[3] OFFLINE TEAM REPORT")
+print("-"*50)
+report = f"""
+BHACKSH Forensic Report
+Date: {datetime.datetime.now()}
+File: {path}
+Tool: BHACKSH OSINT PRO
+Team: Bhandara Cyber Squad
+
+Findings:
+- File Format: {img.format}
+- Dimensions: {img.size}
+- Flag: {flag_found if flag_found else 'Not Found (Try harder)'}
+- Risk: {'HIGH - Flag leaked in metadata' if flag_found else 'LOW'}
+- Recommendation: Check PngInfo / EXIF / strings
+
+Status: CYBERX CTF READY
+"""
+print(report)
+
+# Save report
+with open("team_report.txt","w") as out:
+    out.write(report)
+print("[SAVED] team_report.txt ban gaya - Team ko bhej de!")
+print("="*50)
