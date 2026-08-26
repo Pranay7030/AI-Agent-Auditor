@@ -1,22 +1,19 @@
-# 🛡️ Pranay AI Agent Auditor - Advanced v2.1
+![AI Agent Auditor Banner](banner.png)
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
-![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Kali-green?style=for-the-badge)
-![Security](https://img.shields.io/badge/Security-AI%20Auditor-red?style=for-the-badge)
-![Made By](https://img.shields.io/badge/Made%20By-Pranay-orange?style=for-the-badge)
+# AI AGENT AUDITOR // ADVANCED v2.1 - PRANAY
+### Exploit • Detect • Secure.
 
-> AI Agents ke Attack Chain ko 2 second me audit karne wala tool. Built on phone!
+> **Author:** Pranay Meshram | Bhandara
+> **Mode:** Red Team | AI Security Auditing Tool
 
-### Live Demo
-- Security Score 0-100
-- JSON Forensic Report
-- Tested: Termux, Kali, Ubuntu, Windows
+#### What it does?
+- Detects prompt-injection attempts [CRITICAL]
+- Runs 14/14 exploit tests
+- Locks & secures AI Agents
 
-### Run
-git clone https://github.com/Pranay7030/AI-Agent-Auditor.git
-cd AI-Agent-Auditor
-pip install -r requirements.txt
-python3 auditor.py
+#### For Hacking Jobs:
+`SOC Analyst | Red Team | Pentesting | AI Security`
 
-### Author
-Pranay Meshram - Bhandara / Nagpur
+**GitHub:** github.com/Pranay7030/AI-Agent-Auditor
+
+---
